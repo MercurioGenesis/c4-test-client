@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Stylesheet -->
+        <!-- Uses the url_for() function to look for /static/css/css-main.css -->
+        <link rel="stylesheet" href="{{ url_for('static', filename= 'css/css-main.css') }}">
+        <title>Test</title>
+    </head>
+    <body>
+        <div class="header" name="header">
+            <h3>Welcome to 4Search</h3>
+        </div>
+        <form class="form" name="container-search-mood">
+            <p>Tell us how you're feeling...</p>
+            <input type="text" name="search-mood" placeholder="Or tell us in your own words...">
+        </form>
+    </body>
+</html>
