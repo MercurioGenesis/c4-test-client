@@ -1,32 +1,32 @@
-/* Standard Elements */
+/*
+    C4 TEST APPLICATION
+    Standard CSS Elements
+*/
 
-body
-{
-    background-color: #DDDDDD;
+body {
+    background-color: #000000;
     font-family: verdana;
 }
 
-h1
-{
+/* Headers */
+
+h1 {
     color: maroon;
     font-size: 50px;
 }
 
-h2
-{
-    color: maroon;
+h2 {
+    color: #800000;
     font-size: 30px;
 }
 
-h3
-{
-    color: black;
+h3 {
+    color: #000000;
     font-size: 20px;
 }
 
-p
-{
-    color: black;
+p {
+    color: #000000;
     font-size: 12px;
 }
 

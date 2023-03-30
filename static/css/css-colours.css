@@ -1,0 +1,54 @@
+/*
+    C4 TEST APPLICATION
+    CSS Elements-Colours
+*/
+
+.c4-black, c4-hover-black: hover {
+    color: #ffffff!important;               /* Text colour */
+    background-color: #000000!important;    /* Background Colour */
+}
+
+.c4-blue, c4-hover-blue: hover {
+    color: #000000!important;               /* Text colour */
+    background-color: #668cff!important;    /* Background Colour */
+}
+
+.c4-blue-light, c4-hover-blue-light: hover {
+    color: #000000!important;               /* Text colour */
+    background-color: #b3c6ff!important;    /* Background Colour */
+}
+
+.c4-blue-dark, c4-hover-blue-dark: hover {
+    color: #FFFFFF!important;               /* Text colour */
+    background-color: #002db3!important;    /* Background Colour */
+}
+
+.c4-cyan, c4-hover-cyan: hover {
+    color: #000000!important;               /* Text colour */
+    background-color: #00ffff!important;    /* Background Colour */
+}
+
+.c4-green, c4-hover-green: hover {
+    color: #000000!important;               /* Text colour */
+    background-color: #00ff00!important;    /* Background Colour */
+}
+
+.c4-purple, c4-hover-purple: hover {
+    color: #000000!important;               /* Text colour */
+    background-color: #ff00ff!important;    /* Background Colour */
+}
+
+.c4-red, c4-hover-red: hover {
+    color: #000000!important;               /* Text colour */
+    background-color: #ff0000!important;    /* Background Colour */
+}
+
+.c4-white, c4-hover-white: hover {
+    color: #000000!important;               /* Text colour */
+    background-color: #ffffff!important;    /* Background Colour */
+}
+
+.c4-yellow, c4-hover-yellow: hover {
+    color: #000000!important;               /* Text colour */
+    background-color: #ffff00!important;    /* Background Colour */
+}

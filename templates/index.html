@@ -2,8 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <!-- Stylesheet -->
-        <!-- Uses the url_for() function to look for /static/css/css-main.css -->
+        <!-- Stylesheets -->
+        <!-- Uses the url_for() function to look for /static/css/css-*.css -->
+        <link rel="stylesheet" href="{{ url_for('static', filename= 'css/css-header.css') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename= 'css/css-main.css') }}">
         <title>Test</title>
     </head>
@@ -14,9 +15,6 @@
         </div>
         <div class="sidenav" name="nav">
             <a href="/search" target="main">Search</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-            <a href="#" style="float:bottom">Link 4</a>
         </div>
         <iframe class="main" name="main"></iframe>
     </body>
