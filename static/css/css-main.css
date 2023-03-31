@@ -3,126 +3,96 @@
     Standard CSS Elements
 */
 
-body {
+body
+{
     background-color: #000000;
-    font-family: verdana;
+    color: #ffffff;
+    font-family: "Arial";
+    font-size: 16px;
+
 }
 
-/* Headers */
-
-h1 {
-    color: maroon;
-    font-size: 50px;
+h1
+{
+    color: #990000;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #ff0000;
 }
 
-h2 {
-    color: #800000;
-    font-size: 30px;
-}
-
-h3 {
-    color: #000000;
+h2
+{
     font-size: 20px;
-}
-
-p {
-    color: #000000;
-    font-size: 12px;
-}
-
-/* Sections */
-
-/* Header */
-
-.header
-{
-    background-color: #BBBBBB;
-    border: #000000 solid;
-    border-radius: 20px;
-    border-width: medium;
-    color: red;
-    margin-top: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 2%;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Navigation Sidebar */
-
-.sidenav
-{
-    background-color: #BBBBBB;
-    border: #000000 solid;
-    border-radius: 20px;
-    border-width: medium;
-    margin-left: 2%;
-    overflow-x: hidden;
-    padding: 20px;
-    position: fixed;
-    width: 10%;
-    z-index: 1;
-}
-
-.sidenav a
-{
-    color: #000000;
-    display: block;
-    float: left;
-    padding: 14px 16px;
-    text-align: center;
-    text-decoration: none;
-}
-
-.sidenav a:hover
-{
-    color: maroon;
-}
-
-/* Main Content Area */
-
-.main
-{
-    background-color: #AAAAAA;
-    border: #000000 solid;
-    border-radius: 20px;
-    border-width: medium;
-    height: 800px;
-    margin-left: 18%;
-    overflow-x: hidden;
-    padding: 20px;
-    width: 76%;
+    font-weight: bold;
 }
 
 form
 {
-    background-color: #AAAAAA;
+    background-color: #bbbbbb;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    margin: 1em 0em 1em 1em;
+    width: 50%;
 }
 
-form p
+label
 {
-    color: dark-blue;
-    font-size: 12px;
+    color: #000000;
+    margin: 1em 0em 1em 1em;
 }
 
-input[type=text]
+.radio-container
 {
-    background-color: white;
-    background-image: url('../images/icon-search.png');
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    background-size: 25px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    padding: 12px 20px 12px 40px;
-    transition: width 0.4s ease-in-out;
-    -webkit-transition: width 0.4s ease-in-out;
-    width: 300px;
+    border: 1px solid #ff0000;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 1em 0em 1em 2em;
+    padding: 1em;
+    width: 45%;
 }
 
-input[type=text]:focus {
-  width: 100%;
+[type="radio"]
+{
+    height: 0;
+    opacity: 0;
+    width: 0;
+}
+
+[type="radio"] + img
+{
+    cursor: pointer;
+}
+
+[type="radio"]:checked + img
+{
+    outline: 2px solid #ff0000;
+}
+
+input[type="text"], select[type="text"]
+{
+    border: 1px solid #ff0000;
+    margin: 1em 0em 1em 2em;
+    padding: 1em;
+    width: 25%;
+}
+
+input[type="submit"]
+{
+    border: 1px solid #ff0000;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 1em;
+    background-color: #cccccc;
+    margin: 1em 0em 1em 2em;
+    width: 10%;
+}
+
+.result
+{
+    font-weight: bold;
+    margin-top: 40px;
 }

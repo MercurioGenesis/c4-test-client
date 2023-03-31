@@ -4,18 +4,50 @@
         <meta charset="UTF-8">
         <!-- Stylesheets -->
         <!-- Uses the url_for() function to look for /static/css/css-*.css -->
-        <link rel="stylesheet" href="{{ url_for('static', filename= 'css/css-header.css') }}">
-        <link rel="stylesheet" href="{{ url_for('static', filename= 'css/css-main.css') }}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/css-main.css')}}">
         <title>Test</title>
     </head>
     <body>
-        <div class="header" name="header">
-            <h1>Channel 4 Test App</h1>
-            <h3>Disclaimer: I have no idea what I'm doing</h3>
-        </div>
-        <div class="sidenav" name="nav">
-            <a href="/search" target="main">Search</a>
-        </div>
-        <iframe class="main" name="main"></iframe>
+        <h1>Channel 4 Test App</h1>
+        <h2>Disclaimer: I have no idea what I'm doing</h2>
+        <form action="/gpt" method="post">
+            <label for="mood-select">How are you feeling today?</label>
+            <div class="radio-container" id="mood-select" name="mood-select">
+                <label>
+                    <input type="radio" checked="checked" name="mood-happy">
+                    <img src="{{url_for('static', filename='images/happy.jpg')}}" alt="Happy">
+                </label>
+                <label>
+                    <input type="radio" name="mood-sad">
+                    <img src="{{url_for('static', filename='images/sad.jpg')}}" alt="Sad">
+                </label>
+                <label>
+                    <input type="radio" name="mood-lonely">
+                    <img src="{{url_for('static', filename='images/lonely.jpg')}}" alt="Lonely">
+                </label>
+                <label>
+                    <input type="radio" name="mood-naughty">
+                    <img src="{{url_for('static', filename='images/naughty.jpg')}}" alt="Naughty">
+                </label>
+            </div>
+
+            <label for="mood-text">Or tell us in your own words...</label>
+            <input type="text" id="mood-text" name="mood-text" />
+
+            <label for="mood-count">How many shows do you want to find? (1-5)</label>
+            <select type="text" id="mood-count" name="mood-count" placeholder="1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <input type="submit" value="Search!" />
+        </form>
+
+        {% if result %}
+        <div class="result">{{ result }}</div>
+        {% endif %}
     </body>
 </html>
