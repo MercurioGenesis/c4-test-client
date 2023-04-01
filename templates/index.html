@@ -10,7 +10,10 @@
     <body>
         <h1>Channel 4 Test App</h1>
         <h2>Disclaimer: I have no idea what I'm doing</h2>
-        <form action="/gpt" method="post">
+        <form action="/" method="post">
+            {% if result %}
+            <label>{{ result }}</label>
+            {% endif %}
             <label for="mood-select">How are you feeling today?</label>
             <div class="radio-container" id="mood-select" name="mood-select">
                 <label>
@@ -44,10 +47,8 @@
             </select>
 
             <input type="submit" value="Search!" />
-        </form>
 
-        {% if result %}
-        <div class="result">{{ result }}</div>
-        {% endif %}
+
+        </form>
     </body>
 </html>
